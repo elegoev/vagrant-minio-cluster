@@ -1,0 +1,15 @@
+.DS_Store
+.vagrant
+ansible-epr-inf/
+rolesfromgalaxy/
+rolesfromgitlab/
+files-trans/
+shared_files/
+ovf/
+backup/
+box/
+secret-data/
+conextrade-dev/
+data-cxt/
+sources/
+**/files/token/

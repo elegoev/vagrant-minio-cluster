@@ -1,0 +1,22 @@
+{
+  "esxi":
+  {
+    "host":       "<hostname>",  ["int-a","int-b","int-c","rel-a1","rel-b1","rel-c1","lab-a","db-a"]
+    "user":       "root",
+    "password":   "<password root>",
+    "vmname":     "<vm name>",
+    "vmhostname": "<vm hostname>",
+    "datastore":  "<datastore name>",    ["datastore1", "datastore2"]
+    "network":    "<network name>",      ["ClientNet","ServerNet","DMZ"]
+    "vmnic": [
+      {
+        "ip":            "<vm ip addresse>",
+        "netmask":       "<vm netmask>",
+        "gateway":       "<vm gateway ip>",
+        "dnsnameserver": "<vm dns ip>",
+        "dnsdomain":     "<dns domain>",
+        "dnssearch":     "<dns search domain>"
+      }
+    ]
+  }
+}

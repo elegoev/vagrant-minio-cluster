@@ -1,0 +1,24 @@
+{
+  "hostvars":
+  {
+    "vagrant_image":         "elegoev/ubuntu-18.04-minio",
+    "vagrant_ram":           "512",
+    "vagrant_cpu":           "2",
+    "vb_guest_os":           "ubuntu",
+    "vb_group":              "vagrant-minio-cluster",
+    "vb_dnshostresolve":     true,
+    "vb_network": [
+      {
+        "ip":      "172.16.1.61",
+        "netmask": "255.255.255.0",
+        "netname": "vagrant-minio-cluster-net",
+        "nictype": "82540EM"
+      }
+    ],
+    "vb_shell_provisioner": [
+      {
+        "script": "minio-storage-s3.sh"
+      }
+    ]
+  }
+}

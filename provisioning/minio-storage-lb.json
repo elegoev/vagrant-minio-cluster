@@ -1,0 +1,33 @@
+{
+  "hostvars":
+  {
+    "vagrant_image":         "elegoev/ubuntu-18.04",
+    "vagrant_ram":           "256",
+    "vagrant_cpu":           "2",
+    "vb_guest_os":           "ubuntu",
+    "vb_group":              "vagrant-minio-cluster",
+    "vb_dnshostresolve":     true,
+    "vb_network": [
+      {
+        "ip":      "172.16.1.60",
+        "netmask": "255.255.255.0",
+        "netname": "vagrant-minio-cluster-net",
+        "nictype": "82540EM"
+      }
+    ],
+    "vb_shell_provisioner": [
+      {
+        "script": "minio-storage-lb.sh"
+      }
+    ],
+    "vb_port_forwarding": [
+      {
+        "host":         "8080",
+        "host_ip":      "127.0.0.1",
+        "guest":        "80",
+        "protocol":     "tcp",
+        "id":           "http-haproxy"
+      }
+    ]
+  }
+}

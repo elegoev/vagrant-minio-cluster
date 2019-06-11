@@ -1,0 +1,34 @@
+{
+  "hostvars":
+  {
+    "vagrant_image":         "elegoev/ubuntu-18.04-mate",
+    "vagrant_ram":           "4096",
+    "vagrant_cpu":           "2",
+    "vb_hostname":           "desktop",
+    "vb_guest_os":           "ubuntu",
+    "vb_group":              "vagrant-minio-cluster",
+    "vb_dnshostresolve":     true,
+    "vb_network": [
+      {
+        "ip":      "172.16.1.33",
+        "netmask": "255.255.255.0",
+        "netname": "vagrant-minio-cluster-net",
+        "nictype": "82540EM"
+      }
+    ],
+    "vb_shell_provisioner": [
+      {
+        "script": "minio-mgmt-desktop.sh"
+      }
+    ],
+    "vb_port_forwarding": [
+      {
+        "host":         "9999",
+        "host_ip":      "127.0.0.1",
+        "guest":        "3389",
+        "protocol":     "tcp",
+        "id":           "rdp"
+      }
+    ]
+  }
+}
