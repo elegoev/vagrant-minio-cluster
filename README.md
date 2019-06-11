@@ -16,7 +16,7 @@ Vagrant environment with [minIO](https://min.io/) cluster
 |----------------------|--------------------------------|--------------------------------|
 | Minio Server         | http://minio-storage-lb        | minio-admin / minio-admin      |
 
-#### Lo in to Desktop
+#### Log in to Desktop
 | Application          | URL                            | Username / Password            |
 |----------------------|--------------------------------|--------------------------------|
 | Ubuntu Mate          | vagrant rdp minio-mgmt-desktop | vagrant / vagrant              |
