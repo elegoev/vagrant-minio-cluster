@@ -22,4 +22,4 @@ Vagrant environment with [minIO](https://min.io/) cluster
 | Ubuntu Mate          | vagrant rdp minio-mgmt-desktop | vagrant / vagrant              |
 
 ### Architecture
-![SAML](./svg/diagram.svg)
+![SAML](./svg/diagram.png)
